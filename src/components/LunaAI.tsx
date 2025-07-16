@@ -31,7 +31,7 @@ export const LunaAI = () => {
       setTimeout(() => {
         const greeting: Message = {
           id: Date.now().toString(),
-          text: t('luna.greeting'),
+          text: "Merhaba! Günümüz daha güzel geçmesini dilerim. Size bugün nasıl yardımcı olabilirim?",
           isBot: true,
           timestamp: new Date(),
         };
@@ -71,34 +71,48 @@ export const LunaAI = () => {
   const generateBotResponse = (userInput: string): string => {
     const input = userInput.toLowerCase();
     
+    // Contact preference detection
+    if (input.includes('whatsapp') || input.includes('wp')) {
+      return "WhatsApp üzerinden iletişim kurmak istediğinizi anlıyorum. Telefon numaranızı paylaşabilir misiniz? +90536 773 14 04 üzerinden size ulaşabilirim.";
+    }
+    if (input.includes('mail') || input.includes('email') || input.includes('e-mail')) {
+      return "E-mail ile iletişim kurmayı tercih ediyorsunuz. merhaba@tozyapi.com.tr veya ozkan@tozyapi.com.tr adreslerine yazabilirsiniz.";
+    }
+    if (input.includes('telefon') || input.includes('phone') || input.includes('ara')) {
+      return "Telefon ile görüşmeyi tercih ediyorsunuz. +90536 773 14 04 numarasından bize ulaşabilirsiniz.";
+    }
+    if (input.includes('instagram') || input.includes('insta')) {
+      return "Instagram üzerinden takip etmek istiyorsunuz. Sosyal medya hesaplarımızdan bizi takip edebilirsiniz.";
+    }
+    
     // Product recommendations based on keywords
     if (input.includes('panjur') || input.includes('shutter')) {
-      return t('luna.responses.panjur');
+      return "Panjur sistemlerimizde monoblok, dıştan takma, lento, gizli, ahşap, menteşeli ve yalıtımlı seçenekler bulunmaktadır. Hangi tür panjur sistemi için bilgi istiyorsunuz?";
     }
     if (input.includes('kepenk') || input.includes('rolling')) {
-      return t('luna.responses.kepenk');
+      return "Kepenk sistemlerimizde çelik, alüminyum, poliüretanlı, şeffaf, kayar katlanır ve yangına dayanımlı modeller mevcuttur. Size hangi kepenk türü uygun olabilir?";
     }
     if (input.includes('pergola') || input.includes('pergole')) {
-      return t('luna.responses.pergola');
+      return "Pergola, rolling roof ve bio-climatic sistemlerimiz mevcuttur. Dış mekan yaşam alanlarınız için ideal çözümler sunuyoruz. Detaylı bilgi için iletişime geçelim.";
     }
     if (input.includes('kapı') || input.includes('door') || input.includes('gate')) {
-      return t('luna.responses.door');
+      return "Otomatik kapı sistemlerimizde fotoselli, döner, 90°, hermetik, akustik, yangın, endüstriyel, seksiyonel ve garaj kapıları bulunur. Hangi kapı sistemi için bilgi istiyorsunuz?";
     }
     if (input.includes('fiyat') || input.includes('price') || input.includes('cost')) {
-      return t('luna.responses.price');
+      return "Fiyat bilgisi için ürün detaylarına ihtiyacımız var. Hangi ürün grubu için fiyat öğrenmek istiyorsunuz? Size özel teklif hazırlayabiliriz.";
     }
     if (input.includes('kurulum') || input.includes('install') || input.includes('montaj')) {
-      return t('luna.responses.installation');
+      return "Tüm ürünlerimizde profesyonel kurulum hizmeti veriyoruz. Uzman ekibimiz ile güvenli montaj garantisi sağlıyoruz.";
     }
     if (input.includes('garanti') || input.includes('warranty')) {
-      return t('luna.responses.warranty');
+      return "Ürünlerimizde 2-5 yıl arası garanti sürelerimiz mevcuttur. Garanti koşulları ürüne göre değişiklik göstermektedir.";
     }
     
     // Default responses
     const defaultResponses = [
-      t('luna.responses.default1'),
-      t('luna.responses.default2'),
-      t('luna.responses.default3'),
+      "Merhaba! Size nasıl yardımcı olabilirim? Ürün gruplarımız hakkında bilgi verebilir, iletişim tercihinizi öğrenebilirim.",
+      "Panjur, kepenk, pergola, kapı sistemleri ve daha fazlası için buradayım. Neyi merak ediyorsunuz?",
+      "Size en uygun çözümü bulabilmem için ihtiyacınızı öğrenebilir miyim? Hangi konuda yardım istiyorsunuz?",
     ];
     
     return defaultResponses[Math.floor(Math.random() * defaultResponses.length)];
@@ -110,7 +124,7 @@ export const LunaAI = () => {
       {!isOpen && (
         <button
           onClick={() => setIsOpen(true)}
-          className="fixed bottom-6 right-6 w-16 h-16 bg-primary hover:bg-primary-dark text-primary-foreground rounded-full shadow-glow flex items-center justify-center z-50 transition-all duration-300 hover:scale-110 animate-bounce-in"
+          className="fixed bottom-6 right-6 w-16 h-16 bg-secondary hover:bg-secondary/90 text-secondary-foreground rounded-full shadow-elegant flex items-center justify-center z-50 transition-all duration-300 hover:scale-110 animate-bounce-in"
         >
           <MessageCircle className="w-6 h-6" />
         </button>
@@ -120,19 +134,19 @@ export const LunaAI = () => {
       {isOpen && (
         <div className="fixed bottom-6 right-6 w-96 h-[32rem] bg-card border border-border rounded-2xl shadow-elegant z-50 flex flex-col animate-scale-in">
           {/* Header */}
-          <div className="flex items-center justify-between p-4 border-b border-border bg-primary text-primary-foreground rounded-t-2xl">
+          <div className="flex items-center justify-between p-4 border-b border-border bg-secondary text-secondary-foreground rounded-t-2xl">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-primary-light rounded-full flex items-center justify-center">
-                <Bot className="w-5 h-5" />
+              <div className="w-10 h-10 bg-accent rounded-full flex items-center justify-center">
+                <Bot className="w-5 h-5 text-accent-foreground" />
               </div>
               <div>
                 <h3 className="font-semibold">Luna AI</h3>
-                <p className="text-xs opacity-90">{t('luna.subtitle')}</p>
+                <p className="text-xs opacity-90">Müşteri Danışmanınız</p>
               </div>
             </div>
             <button
               onClick={() => setIsOpen(false)}
-              className="p-1 hover:bg-primary-light rounded-full transition-colors"
+              className="p-1 hover:bg-secondary/80 rounded-full transition-colors"
             >
               <X className="w-5 h-5" />
             </button>
@@ -191,7 +205,7 @@ export const LunaAI = () => {
               <button
                 onClick={handleSendMessage}
                 disabled={!inputValue.trim()}
-                className="w-10 h-10 bg-primary text-primary-foreground rounded-lg flex items-center justify-center hover:bg-primary-dark transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-10 h-10 bg-secondary text-secondary-foreground rounded-lg flex items-center justify-center hover:bg-secondary/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 <Send className="w-4 h-4" />
               </button>

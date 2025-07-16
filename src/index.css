@@ -8,46 +8,38 @@
 /* Toz Yapı Sistemleri Design System - Rolex Green Theme */
 @layer base {
   :root {
-    /* Rolex Green Color Palette */
-    --rolex-green: 136 53% 32%;
-    --rolex-green-light: 136 45% 45%;
-    --rolex-green-dark: 136 65% 25%;
-    --rolex-green-accent: 136 35% 55%;
-    
+    /* Professional Business Theme - Reduced Green Usage */
+    --primary: 136 53% 32%;  /* Rolex Green - accent only */
+    --primary-foreground: 0 0% 98%;
+
+    /* RAL 7021 Black Grey - Main business color */
+    --secondary: 207 8% 25%;  /* RAL 7021 equivalent */
+    --secondary-foreground: 0 0% 98%;
+
+    /* Yellow accent - minimal usage */
+    --accent: 48 100% 67%;  /* Professional yellow */
+    --accent-foreground: 0 0% 15%;
+
     /* Background Colors */
     --background: 0 0% 100%;
-    --foreground: 136 15% 15%;
+    --foreground: 207 15% 15%;
     --card: 0 0% 100%;
-    --card-foreground: 136 15% 15%;
+    --card-foreground: 207 15% 15%;
     --popover: 0 0% 100%;
-    --popover-foreground: 136 15% 15%;
+    --popover-foreground: 207 15% 15%;
 
-    /* Primary - Rolex Green */
-    --primary: 136 53% 32%;
-    --primary-foreground: 0 0% 98%;
-    --primary-light: 136 45% 45%;
-    --primary-dark: 136 65% 25%;
-
-    /* Secondary Colors */
-    --secondary: 136 15% 96%;
-    --secondary-foreground: 136 53% 32%;
-
-    /* Accent Colors */
-    --accent: 136 25% 90%;
-    --accent-foreground: 136 53% 32%;
-
-    /* Muted Colors */
-    --muted: 136 10% 95%;
-    --muted-foreground: 136 15% 45%;
+    /* Neutral grays for main content */
+    --muted: 207 10% 95%;
+    --muted-foreground: 207 15% 45%;
 
     /* Destructive */
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
     /* Border & Input */
-    --border: 136 20% 85%;
-    --input: 136 20% 90%;
-    --ring: 136 53% 32%;
+    --border: 207 20% 85%;
+    --input: 207 20% 90%;
+    --ring: 207 8% 25%;  /* RAL 7021 for focus */
 
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
@@ -83,34 +75,32 @@
   }
 
   .dark {
-    /* Dark theme with Rolex Green accents */
-    --background: 136 15% 8%;
-    --foreground: 136 5% 95%;
-    --card: 136 15% 10%;
-    --card-foreground: 136 5% 95%;
-    --popover: 136 15% 10%;
-    --popover-foreground: 136 5% 95%;
+    /* Dark theme with professional colors */
+    --background: 207 15% 8%;
+    --foreground: 207 5% 95%;
+    --card: 207 15% 10%;
+    --card-foreground: 207 5% 95%;
+    --popover: 207 15% 10%;
+    --popover-foreground: 207 5% 95%;
 
-    --primary: 136 53% 45%;
+    --primary: 136 53% 45%;  /* Green accent */
     --primary-foreground: 0 0% 98%;
-    --primary-light: 136 45% 55%;
-    --primary-dark: 136 65% 35%;
 
-    --secondary: 136 15% 15%;
-    --secondary-foreground: 136 5% 90%;
+    --secondary: 207 8% 35%;  /* RAL 7021 lighter for dark mode */
+    --secondary-foreground: 207 5% 90%;
 
-    --accent: 136 20% 20%;
-    --accent-foreground: 136 5% 90%;
+    --accent: 48 100% 67%;  /* Yellow accent */
+    --accent-foreground: 207 15% 8%;
 
-    --muted: 136 15% 12%;
-    --muted-foreground: 136 10% 60%;
+    --muted: 207 15% 12%;
+    --muted-foreground: 207 10% 60%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 136 20% 18%;
-    --input: 136 20% 15%;
-    --ring: 136 53% 45%;
+    --border: 207 20% 18%;
+    --input: 207 20% 15%;
+    --ring: 207 8% 35%;
   }
 }
 

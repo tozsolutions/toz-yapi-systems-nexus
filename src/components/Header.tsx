@@ -28,19 +28,19 @@ const Header = () => {
   return (
     <>
       {/* Top Contact Bar */}
-      <div className="bg-primary text-primary-foreground py-2 px-4">
+      <div className="bg-secondary text-secondary-foreground py-2 px-4">
         <div className="container mx-auto flex flex-wrap justify-between items-center text-sm">
           <div className="flex items-center space-x-6">
             <div className="flex items-center space-x-2">
-              <Phone className="w-4 h-4" />
+              <Phone className="w-4 h-4 text-accent" />
               <span>+90 536 773 14 04</span>
             </div>
             <div className="flex items-center space-x-2">
-              <Mail className="w-4 h-4" />
+              <Mail className="w-4 h-4 text-accent" />
               <span>merhaba@tozyapi.com.tr</span>
             </div>
             <div className="flex items-center space-x-2">
-              <MapPin className="w-4 h-4" />
+              <MapPin className="w-4 h-4 text-accent" />
               <span className="hidden md:inline">Üniversiteler Mah. Bilkent Center AVM, Çankaya/ANKARA</span>
             </div>
           </div>
@@ -54,11 +54,12 @@ const Header = () => {
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-xl">T</span>
+              {/* Company Logo Placeholder */}
+              <div className="w-12 h-12 bg-card border-2 border-secondary rounded-lg flex items-center justify-center">
+                <span className="text-secondary font-bold text-xl">TYS</span>
               </div>
               <div>
-                <h1 className="text-2xl font-bold text-primary">Toz Yapı Sistemleri</h1>
+                <h1 className="text-2xl font-bold text-secondary">Toz Yapı Sistemleri</h1>
                 <p className="text-xs text-muted-foreground">KEŞFEDİN ! Belkide İhtiyacınız olan ürün burada</p>
               </div>
             </div>

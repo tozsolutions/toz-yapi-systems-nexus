@@ -5,11 +5,14 @@ import { useLanguage } from '../hooks/useLanguage';
 const languages = [
   { code: 'tr', name: 'Türkçe', flag: '🇹🇷' },
   { code: 'en', name: 'English', flag: '🇺🇸' },
-  { code: 'ru', name: 'Русский', flag: '🇷🇺' },
   { code: 'pl', name: 'Polski', flag: '🇵🇱' },
   { code: 'es', name: 'Español', flag: '🇪🇸' },
-  { code: 'ar', name: 'العربية', flag: '🇸🇦' },
   { code: 'ko', name: '한국어', flag: '🇰🇷' },
+  { code: 'hr', name: 'Hrvatski', flag: '🇭🇷' },
+  { code: 'rs', name: 'Српски', flag: '🇷🇸' },
+  { code: 'hi', name: 'हिन्दी', flag: '🇮🇳' },
+  { code: 'ru', name: 'Русский', flag: '🇷🇺' },
+  { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
 ];
 
 export const LanguageSelector = () => {
