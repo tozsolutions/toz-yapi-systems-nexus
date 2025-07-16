@@ -60,14 +60,21 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
+## Projeyi Çalıştırmak için Adımlar
 
-Simply open [Lovable](https://lovable.dev/projects/77c165e4-d852-4a05-99b3-f131cff3c46e) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+1. Depoyu bilgisayarına klonla:
+    ```sh
+    git clone <YOUR_GIT_URL>
+    ```
+2. Proje klasörüne geç:
+    ```sh
+    cd <YOUR_PROJECT_NAME>
+    ```
+3. Gerekli bağımlılıkları yükle:
+    ```sh
+    npm i
+    ```
+4. Geliştirme sunucusunu başlat:
+    ```sh
+    npm run dev
+    ```
