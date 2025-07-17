@@ -76,7 +76,7 @@ const Hero = () => {
                   <div className="w-32 h-32 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-4xl font-bold">T</span>
                   </div>
-                  <p className="text-lg font-medium">Toz Yapı Sistemleri</p>
+                  <p className="text-lg font-medium">Toz Yapı Teknolojileri</p>
                   <p className="text-sm opacity-80 mt-2">Modern Yapı Çözümleri</p>
                 </div>
               </div>

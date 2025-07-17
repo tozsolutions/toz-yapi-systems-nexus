@@ -31,7 +31,7 @@ export const LunaAI = () => {
       setTimeout(() => {
         const greeting: Message = {
           id: Date.now().toString(),
-          text: "Merhaba! Günümüz daha güzel geçmesini dilerim. Size bugün nasıl yardımcı olabilirim?",
+          text: "Merhaba! Gününüz daha güzel geçmesini dilerim. Size bugün nasıl yardımcı olabilirim? Toz Yapı Teknolojileri ürünleri hakkında sorularınızı yanıtlayabilirim.",
           isBot: true,
           timestamp: new Date(),
         };

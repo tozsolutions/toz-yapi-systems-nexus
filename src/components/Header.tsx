@@ -8,21 +8,21 @@ const Header = () => {
   const { t } = useLanguage();
 
   const navigation = [
-    { name: t('nav.home'), href: '#home' },
-    { name: t('nav.products'), href: '#products', 
+    { name: t('nav.home'), href: '/' },
+    { name: t('nav.products'), href: '/products', 
       children: [
-        { name: t('nav.panjur'), href: '#panjur' },
-        { name: t('nav.kepenk'), href: '#kepenk' },
-        { name: t('nav.pergola'), href: '#pergola' },
-        { name: t('nav.zipPerde'), href: '#zip-perde' },
-        { name: t('nav.otomatikKapi'), href: '#otomatik-kapi' },
-        { name: t('nav.sundurma'), href: '#sundurma' },
-        { name: t('nav.havuzKapama'), href: '#havuz-kapama' },
-        { name: t('nav.bahceCit'), href: '#bahce-cit' },
+        { name: t('nav.panjur'), href: '/products#panjur' },
+        { name: t('nav.kepenk'), href: '/products#kepenk' },
+        { name: t('nav.pergola'), href: '/products#pergola' },
+        { name: t('nav.zipPerde'), href: '/products#zip-perde' },
+        { name: t('nav.otomatikKapi'), href: '/products#otomatik-kapi' },
+        { name: t('nav.sundurma'), href: '/products#sundurma' },
+        { name: t('nav.havuzKapama'), href: '/products#havuz-kapama' },
+        { name: t('nav.bahceCit'), href: '/products#bahce-cit' },
       ]
     },
-    { name: t('nav.about'), href: '#about' },
-    { name: t('nav.contact'), href: '#contact' },
+    { name: t('nav.about'), href: '/about' },
+    { name: t('nav.contact'), href: '/contact' },
   ];
 
   return (
@@ -56,11 +56,11 @@ const Header = () => {
             <div className="flex items-center space-x-3">
               {/* Company Logo Placeholder */}
               <div className="w-12 h-12 bg-card border-2 border-secondary rounded-lg flex items-center justify-center">
-                <span className="text-secondary font-bold text-xl">TYS</span>
+                <span className="text-secondary font-bold text-xl">TYT</span>
               </div>
               <div>
-                <h1 className="text-2xl font-bold text-secondary">Toz Yapı Sistemleri</h1>
-                <p className="text-xs text-muted-foreground">KEŞFEDİN ! Belkide İhtiyacınız olan ürün burada</p>
+                <h1 className="text-2xl font-bold text-secondary">Toz Yapı Teknolojileri</h1>
+                <p className="text-xs text-muted-foreground">KEŞFEDİN ! Belki de ihtiyacınız olan ürün burada</p>
               </div>
             </div>
 
@@ -95,10 +95,10 @@ const Header = () => {
 
             {/* CTA Button */}
             <div className="hidden lg:flex items-center space-x-4">
-              <button className="btn-outline-hero">
+              <button className="btn-outline-hero" onClick={() => window.location.href = '/quote'}>
                 {t('cta.quote')}
               </button>
-              <button className="btn-hero">
+              <button className="btn-hero" onClick={() => window.location.href = '/contact'}>
                 {t('cta.contact')}
               </button>
             </div>
@@ -143,10 +143,10 @@ const Header = () => {
                 </div>
               ))}
               <div className="pt-4 space-y-2">
-                <button className="w-full btn-outline-hero">
+                <button className="w-full btn-outline-hero" onClick={() => window.location.href = '/quote'}>
                   {t('cta.quote')}
                 </button>
-                <button className="w-full btn-hero">
+                <button className="w-full btn-hero" onClick={() => window.location.href = '/contact'}>
                   {t('cta.contact')}
                 </button>
               </div>

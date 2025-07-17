@@ -12,7 +12,7 @@ export const Footer = () => {
               <div className="w-8 h-8 bg-card rounded flex items-center justify-center">
                 <span className="text-sm font-bold text-secondary">TYS</span>
               </div>
-              <span className="font-bold text-lg">Toz Yapı Sistemleri</span>
+              <span className="font-bold text-lg">Toz Yapı Teknolojileri</span>
             </div>
             <p className="text-sm opacity-90">
               KEŞFEDİN! Belki de ihtiyacınız olan ürün burada
@@ -58,11 +58,11 @@ export const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-semibold text-lg">Hızlı Linkler</h3>
             <div className="space-y-1 text-sm">
-              <div><a href="#" className="hover:text-accent transition-colors">Ana Sayfa</a></div>
-              <div><a href="#" className="hover:text-accent transition-colors">Ürünler</a></div>
-              <div><a href="#" className="hover:text-accent transition-colors">Hakkımızda</a></div>
-              <div><a href="#" className="hover:text-accent transition-colors">İletişim</a></div>
-              <div><a href="#" className="hover:text-accent transition-colors">Teklif Al</a></div>
+              <div><a href="/" className="hover:text-accent transition-colors">Ana Sayfa</a></div>
+              <div><a href="/products" className="hover:text-accent transition-colors">Ürünler</a></div>
+              <div><a href="/about" className="hover:text-accent transition-colors">Hakkımızda</a></div>
+              <div><a href="/contact" className="hover:text-accent transition-colors">İletişim</a></div>
+              <div><a href="/quote" className="hover:text-accent transition-colors">Teklif Al</a></div>
             </div>
           </div>
         </div>
@@ -70,7 +70,7 @@ export const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-secondary-foreground/20 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center">
           <div className="text-sm opacity-75">
-            © 2024 Toz Yapı Sistemleri. Tüm hakları saklıdır.
+            © 2024 Toz Yapı Teknolojileri. Tüm hakları saklıdır.
           </div>
           
           {/* Designer Logo Placeholder */}
