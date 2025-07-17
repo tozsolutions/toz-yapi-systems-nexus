@@ -14,49 +14,113 @@ const ProductsContent = () => {
       icon: Shield,
       title: { tr: 'PANJUR Sistemleri', en: 'SHUTTER Systems' },
       description: { tr: 'Monoblok-Dıştan Takma-Lento-Gizli-Ahşap-Menteşeli-Yalıtımlı', en: 'Monoblock-External Mount-Lento-Hidden-Wood-Hinged-Insulated' },
-      items: ['Monoblok Panjur', 'Dıştan Takma Panjur', 'Lento Panjur', 'Gizli Panjur', 'Ahşap Panjur', 'Menteşeli Panjur', 'Yalıtımlı Panjur']
+      items: [
+        { name: 'Monoblok Panjur', description: 'Duvar içine gömülü sistem' },
+        { name: 'Dıştan Takma Panjur', description: 'Dış yüzeye montaj sistemi' },
+        { name: 'Lento Panjur', description: 'Görünür kutu sistemi' },
+        { name: 'Gizli Panjur', description: 'Estetik gizli montaj' },
+        { name: 'Ahşap Panjur', description: 'Doğal ahşap malzeme' },
+        { name: 'Menteşeli Panjur', description: 'Klasik açılım sistemi' },
+        { name: 'Yalıtımlı Panjur', description: 'Termal yalıtım sistemi' }
+      ]
     },
     {
       icon: Lock,
       title: { tr: 'KEPENK Sistemleri', en: 'ROLLING SHUTTER Systems' },
       description: { tr: 'Çelik-Alüminyum-Poliüretanlı-Şeffaf-Kayar Katlanır-Yangına Dayanımlı', en: 'Steel-Aluminum-Polyurethane-Transparent-Sliding Folding-Fire Resistant' },
-      items: ['Çelik Kepenk', 'Alüminyum Kepenk', 'Poliüretanlı Kepenk', 'Şeffaf Kepenk', 'Kayar Katlanır Kepenk', 'Yangına Dayanımlı Kepenk']
+      items: [
+        { name: 'Çelik Kepenk', description: 'Yüksek güvenlik sistemi' },
+        { name: 'Alüminyum Kepenk', description: 'Hafif ve dayanıklı sistem' },
+        { name: 'Poliüretanlı Kepenk', description: 'Yalıtımlı güvenlik sistemi' },
+        { name: 'Şeffaf Kepenk', description: 'Görünürlük sağlayan sistem' },
+        { name: 'Kayar Katlanır Kepenk', description: 'Kompakt açılım sistemi' },
+        { name: 'Yangına Dayanımlı Kepenk', description: 'Yangın güvenlik sistemi' }
+      ]
     },
     {
       icon: Sun,
-      title: { tr: 'PERGOLA, Rolling Roof, Bio-Climatic, Tente', en: 'PERGOLA, Rolling Roof, Bio-Climatic, Awning' },
-      description: { tr: 'Modern pergola sistemleri ve çözümleri', en: 'Modern pergola systems and solutions' },
-      items: ['Pergola Sistemleri', 'Rolling Roof', 'Bio-Climatic Sistemler', 'Tente Sistemleri']
+      title: { tr: 'PERGOLA & TENTE Sistemleri', en: 'PERGOLA & AWNING Systems' },
+      description: { tr: 'Modern pergola, rolling roof, bio-climatic ve tente sistemleri', en: 'Modern pergola, rolling roof, bio-climatic and awning systems' },
+      items: [
+        { name: 'Pergola Sistemleri', description: 'Açık alan gölgelendirme' },
+        { name: 'Rolling Roof', description: 'Hareketli çatı sistemi' },
+        { name: 'Bio-Climatic Sistemler', description: 'İklim kontrol sistemi' },
+        { name: 'Tente Sistemleri', description: 'Kumaş gölgelendirme' },
+        { name: 'Açılır Kapanır Pergola', description: 'Elektrikli kontrol sistemi' },
+        { name: 'Cam Pergola', description: 'Şeffaf çatı sistemi' }
+      ]
     },
     {
       icon: Waves,
-      title: { tr: 'Zip Perde ve Giyotin-Sürme-Rüzgar Kırıcı-Dış Cephe Jaluzileri', en: 'Zip Curtain and Guillotine-Sliding-Wind Breaker-Exterior Blinds' },
-      description: { tr: 'Çeşitli perde ve jaluz sistemleri', en: 'Various curtain and blind systems' },
-      items: ['Zip Perde', 'Giyotin Perde', 'Sürme Perde', 'Rüzgar Kırıcı', 'Dış Cephe Jaluzileri']
+      title: { tr: 'ZIP PERDE Sistemleri', en: 'ZIP CURTAIN Systems' },
+      description: { tr: 'Zip perde, giyotin, sürme, rüzgar kırıcı ve dış cephe jaluzileri', en: 'Zip curtain, guillotine, sliding, wind breaker and exterior blinds' },
+      items: [
+        { name: 'Zip Perde', description: 'Rüzgar dayanımlı perde sistemi' },
+        { name: 'Giyotin Perde', description: 'Dikey hareket sistemi' },
+        { name: 'Sürme Perde', description: 'Yatay hareket sistemi' },
+        { name: 'Rüzgar Kırıcı', description: 'Cam balkon sistemi' },
+        { name: 'Dış Cephe Jaluzileri', description: 'Mimari gölgelendirme' },
+        { name: 'Cam Balkon Sistemleri', description: 'Katlanabilir cam sistem' }
+      ]
     },
     {
       icon: Home,
-      title: { tr: 'Otomatik Kapı Sistemleri', en: 'Automatic Door Systems' },
-      description: { tr: 'Fotoselli Kapı-Döner Kapı, 90° Kapı-Hermetik Kapı, Akustik Kapı, Yangın Kapısı, Endüstriyel-Seksiyonel-Garaj Kapıları', en: 'Photocell Door-Revolving Door, 90° Door-Hermetic Door, Acoustic Door, Fire Door, Industrial-Sectional-Garage Doors' },
-      items: ['Fotoselli Kapı', 'Döner Kapı', '90° Kapı', 'Hermetik Kapı', 'Akustik Kapı', 'Yangın Kapısı', 'Endüstriyel Kapı', 'Seksiyonel Kapı', 'Garaj Kapıları']
+      title: { tr: 'OTOMATIK KAPI Sistemleri', en: 'AUTOMATIC DOOR Systems' },
+      description: { tr: 'Fotoselli, döner, hermetik, akustik, yangın ve endüstriyel kapı sistemleri', en: 'Photocell, revolving, hermetic, acoustic, fire and industrial door systems' },
+      items: [
+        { name: 'Fotoselli Kapı', description: 'Sensör kontrollü otomatik kapı' },
+        { name: 'Döner Kapı', description: 'Revolving door sistemi' },
+        { name: '90° Otomatik Kapı', description: 'Tek kanat otomatik sistem' },
+        { name: 'Hermetik Kapı', description: 'Hava sızdırmazlık sistemi' },
+        { name: 'Akustik Kapı', description: 'Ses yalıtım sistemi' },
+        { name: 'Yangın Kapısı', description: 'Yangın güvenlik sistemi' },
+        { name: 'Endüstriyel Kapı', description: 'Ağır hizmet tipi kapı' },
+        { name: 'Seksiyonel Kapı', description: 'Bölümlenmiş açılım sistemi' },
+        { name: 'Garaj Kapıları', description: 'Otomatik garaj sistemi' }
+      ]
     },
     {
       icon: Umbrella,
-      title: { tr: 'Sundurma ve Carport Sistemleri', en: 'Canopy and Carport Systems' },
+      title: { tr: 'SUNDURMA & CARPORT', en: 'CANOPY & CARPORT' },
       description: { tr: 'Koruma ve barınma çözümleri', en: 'Protection and shelter solutions' },
-      items: ['Sundurma Sistemleri', 'Carport Sistemleri']
+      items: [
+        { name: 'Sundurma Sistemleri', description: 'Giriş koruma sistemi' },
+        { name: 'Carport Sistemleri', description: 'Araç koruma sistemi' },
+        { name: 'Kanopi Sistemleri', description: 'Büyük alan koruma' },
+        { name: 'Polikarbon Sundurma', description: 'Şeffaf koruma sistemi' }
+      ]
     },
     {
       icon: Waves,
-      title: { tr: 'Havuz Kapama Çözümleri', en: 'Pool Enclosure Solutions' },
-      description: { tr: 'Havuz koruma sistemleri', en: 'Pool protection systems' },
-      items: ['Havuz Kapama Sistemleri']
+      title: { tr: 'HAVUZ KAPAMA Çözümleri', en: 'POOL ENCLOSURE Solutions' },
+      description: { tr: 'Havuz koruma ve kapatma sistemleri', en: 'Pool protection and enclosure systems' },
+      items: [
+        { name: 'Havuz Kapama Sistemleri', description: 'Sezonsal koruma sistemi' },
+        { name: 'Havuz Örtü Sistemleri', description: 'Güvenlik örtü sistemi' },
+        { name: 'Havuz Bariyeri', description: 'Güvenlik koruma sistemi' }
+      ]
     },
     {
       icon: Fence,
-      title: { tr: 'Bahçe ve Çit Sistemleri', en: 'Garden and Fence Systems' },
+      title: { tr: 'BAHÇE & ÇİT Sistemleri', en: 'GARDEN & FENCE Systems' },
       description: { tr: 'Bahçe düzenleme ve güvenlik sistemleri', en: 'Garden arrangement and security systems' },
-      items: ['Bahçe Sistemleri', 'Çit Sistemleri']
+      items: [
+        { name: 'Bahçe Sistemleri', description: 'Peyzaj düzenleme' },
+        { name: 'Çit Sistemleri', description: 'Sınır belirleme sistemi' },
+        { name: 'Güvenlik Çitleri', description: 'Yüksek güvenlik sistemi' },
+        { name: 'Dekoratif Çitler', description: 'Estetik sınırlama sistemi' }
+      ]
+    },
+    {
+      icon: Wrench,
+      title: { tr: 'CAM & ALÜMİNYUM Sistemleri', en: 'GLASS & ALUMINUM Systems' },
+      description: { tr: 'Cam ve alüminyum doğrama sistemleri', en: 'Glass and aluminum joinery systems' },
+      items: [
+        { name: 'Cam Balkon', description: 'Katlanabilir cam sistem' },
+        { name: 'Kış Bahçesi', description: 'Cam kapalı alan sistemi' },
+        { name: 'Cam Çatı', description: 'Şeffaf çatı sistemi' },
+        { name: 'Alüminyum Doğrama', description: 'Pencere ve kapı sistemleri' }
+      ]
     }
   ];
 
@@ -88,10 +152,19 @@ const ProductsContent = () => {
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <ul className="space-y-2">
+                    <ul className="space-y-3">
                       {product.items.map((item, itemIndex) => (
-                        <li key={itemIndex} className="text-sm text-primary hover:text-primary/80 transition-colors cursor-pointer">
-                          • {item}
+                        <li key={itemIndex} className="p-3 bg-muted/50 rounded-lg hover:bg-primary/10 transition-colors cursor-pointer group">
+                          <div className="flex flex-col">
+                            <span className="font-medium text-primary group-hover:text-primary/80 transition-colors">
+                              {typeof item === 'string' ? item : item.name}
+                            </span>
+                            {typeof item === 'object' && item.description && (
+                              <span className="text-xs text-muted-foreground mt-1">
+                                {item.description}
+                              </span>
+                            )}
+                          </div>
                         </li>
                       ))}
                     </ul>

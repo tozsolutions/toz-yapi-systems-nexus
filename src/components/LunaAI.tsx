@@ -136,7 +136,18 @@ export const LunaAI = () => {
           {/* Header */}
           <div className="flex items-center justify-between p-4 border-b border-border bg-secondary text-secondary-foreground rounded-t-2xl">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-accent rounded-full flex items-center justify-center">
+              <img 
+                src="/src/assets/Luna-AI.jpg" 
+                alt="Luna AI"
+                className="w-10 h-10 rounded-full object-cover border-2 border-accent"
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  target.style.display = 'none';
+                  const fallback = target.nextElementSibling as HTMLElement;
+                  if (fallback) fallback.style.display = 'flex';
+                }}
+              />
+              <div className="w-10 h-10 bg-accent rounded-full items-center justify-center hidden">
                 <Bot className="w-5 h-5 text-accent-foreground" />
               </div>
               <div>

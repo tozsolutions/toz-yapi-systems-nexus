@@ -54,8 +54,19 @@ const Header = () => {
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <div className="flex items-center space-x-3">
-              {/* Company Logo Placeholder */}
-              <div className="w-12 h-12 bg-card border-2 border-secondary rounded-lg flex items-center justify-center">
+              {/* Company Logo */}
+              <img 
+                src="/src/assets/toz-logo.png" 
+                alt="Toz Yapı Teknolojileri"
+                className="w-12 h-12 object-contain"
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  target.style.display = 'none';
+                  const fallback = target.nextElementSibling as HTMLElement;
+                  if (fallback) fallback.style.display = 'flex';
+                }}
+              />
+              <div className="w-12 h-12 bg-card border-2 border-secondary rounded-lg items-center justify-center hidden">
                 <span className="text-secondary font-bold text-xl">TYT</span>
               </div>
               <div>

@@ -37,8 +37,8 @@ const Hero = () => {
               </span>
             </h1>
             
-            <p className="text-xl text-white/90 mb-8 leading-relaxed animate-slide-up">
-              {t('hero.description')}
+            <p className="text-xl text-primary mb-8 leading-relaxed animate-slide-up font-medium">
+              2008 yılından beri sektörde öncü, kaliteli ve yenilikçi çözümlerle projelerinize değer katıyoruz.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-12 animate-slide-up" style={{ animationDelay: '0.3s' }}>

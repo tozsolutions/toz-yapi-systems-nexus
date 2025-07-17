@@ -76,7 +76,18 @@ export const Footer = () => {
           {/* Designer Logo Placeholder */}
           <div className="flex items-center space-x-2 mt-4 md:mt-0">
             <span className="text-sm opacity-75">Designed by</span>
-            <div className="w-6 h-6 bg-card rounded flex items-center justify-center">
+            <img 
+              src="/src/assets/designer-logo.png" 
+              alt="Designer Logo"
+              className="w-6 h-6 object-contain"
+              onError={(e) => {
+                const target = e.target as HTMLImageElement;
+                target.style.display = 'none';
+                const fallback = target.nextElementSibling as HTMLElement;
+                if (fallback) fallback.style.display = 'flex';
+              }}
+            />
+            <div className="w-6 h-6 bg-card rounded items-center justify-center hidden">
               <span className="text-xs font-bold text-secondary">DL</span>
             </div>
           </div>
