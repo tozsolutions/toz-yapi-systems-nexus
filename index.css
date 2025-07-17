@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(20, 14.3%, 4.1%);
+  --muted: hsl(60, 4.8%, 95.9%);
+  --muted-foreground: hsl(25, 5.3%, 44.7%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(20, 14.3%, 4.1%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(20, 14.3%, 4.1%);
+  --border: hsl(20, 5.9%, 90%);
+  --input: hsl(20, 5.9%, 90%);
+  --primary: hsl(150, 100%, 21%);
+  --primary-foreground: hsl(60, 9.1%, 97.8%);
+  --secondary: hsl(60, 4.8%, 95.9%);
+  --secondary-foreground: hsl(24, 9.8%, 10%);
+  --accent: hsl(60, 4.8%, 95.9%);
+  --accent-foreground: hsl(24, 9.8%, 10%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(20, 14.3%, 4.1%);
+  --radius: 0.5rem;
+  
+  /* Custom TOZ Solutions Colors */
+  --rolex-green: hsl(150, 100%, 21%);
+  --glow-yellow: hsl(51, 100%, 50%);
+  --light-gray: hsl(220, 14%, 96%);
+  --dark-gray: hsl(220, 26%, 14%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(150, 100%, 21%);
+  --primary-foreground: hsl(60, 9.1%, 97.8%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .hero-gradient {
+    background: linear-gradient(135deg, var(--rolex-green) 0%, hsl(150, 100%, 25%) 100%);
+  }
+  
+  .glow-effect {
+    box-shadow: 0 0 20px hsla(51, 100%, 50%, 0.3);
+  }
+  
+  .card-hover:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+  }
+  
+  .text-rolex-green {
+    color: var(--rolex-green);
+  }
+  
+  .text-glow-yellow {
+    color: var(--glow-yellow);
+  }
+  
+  .text-light-gray {
+    color: var(--light-gray);
+  }
+  
+  .text-dark-gray {
+    color: var(--dark-gray);
+  }
+  
+  .bg-rolex-green {
+    background-color: var(--rolex-green);
+  }
+  
+  .bg-glow-yellow {
+    background-color: var(--glow-yellow);
+  }
+  
+  .bg-light-gray {
+    background-color: var(--light-gray);
+  }
+  
+  .bg-dark-gray {
+    background-color: var(--dark-gray);
+  }
+  
+  .border-rolex-green {
+    border-color: var(--rolex-green);
+  }
+  
+  .border-glow-yellow {
+    border-color: var(--glow-yellow);
+  }
+  
+  .hover\:bg-rolex-green:hover {
+    background-color: var(--rolex-green);
+  }
+  
+  .hover\:bg-glow-yellow:hover {
+    background-color: var(--glow-yellow);
+  }
+  
+  .hover\:text-rolex-green:hover {
+    color: var(--rolex-green);
+  }
+  
+  .hover\:text-glow-yellow:hover {
+    color: var(--glow-yellow);
+  }
+}
